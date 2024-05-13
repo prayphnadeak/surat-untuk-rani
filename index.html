@@ -1,0 +1,45 @@
+<html>
+  <body>
+    <style>
+      /* Bagian untuk memunculkan background foto*/
+      /* Upload fotomu dengan pasangan di imgbb.com, lalu link hosting-nya copy-paste untuk gantikan link url di bawah ini*/
+      body {
+        background-image: url("https://thumbs.dreamstime.com/b/love-letter-background-valentine-s-day-empty-space-text-152223698.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: all .3s ease;
+        margin: 0; /* Untuk menghilangkan margin bawaan browser */
+        height: 100vh; /* Untuk mengisi seluruh ketinggian viewport */
+      }
+    </style> 
+
+    
+    <div id="bodyblur">
+    <center>
+    <br>
+    <br>
+    <br>
+    <h1>Hai Rani Martalisa Taorina Panjaitan !</h1>
+    <h1>Mau baca surat spesial dari abang?</h1>
+    <br>
+    <br>
+    <button id="btn_mau" onclick="window.open('others.html')" style="position:left"><strong><font size="6">Mau Baca Dong</font></strong></button>&nbsp;
+    <button id="btn_gamau" onclick="gamau(this)" style="position:relative"><strong><font size="6">Nggak Mau. Males!</font></strong></button>
+    </center>
+    </div>
+  </body>
+
+  
+  <script>
+    /*--Javascript untuk membuat animasi tombol "Nggak Mau. Males !" agar dapat bergerak*/
+    function gamau(id) {
+      var mau = document.getElementById("btn_mau");
+      var i = Math.floor(Math.random() * 370) + 1;
+      var j = Math.floor(Math.random() * 170) + mau.offsetTop;
+      id.style.left = i + "px";
+      id.style.top = j + "px";
+    }
+  </script>
+  
+</html>
